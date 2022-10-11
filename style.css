@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: rgb(35, 192, 254);
+}
+
+.container{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+border: 1px solid rgba(255, 255, 255, 0.38);
+
+padding: 1rem 2rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-family: 'Acme', sans-serif;
+}
+
+form input{
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: .5rem .5rem;
+    text-align: center;
+}
+
+form input:focus-visible{
+    background-color: rgb(255, 250, 117);
+}
+
+form #temp_diff{
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid black;
+  
+}
+
+form #btn1{
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: 0.5s;
+    border-radius: .3rem;
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+form #btn1:hover{
+    cursor: pointer;
+    background-color: rgb(255, 250, 117);
+}
+
+
+
+
+.btn2 a{
+    padding: 10px 12px;
+    text-decoration: none;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Acme', sans-serif;
+    color: black;
+    transition: 0.5s;
+    display: inline-block;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn2:hover{
+    background: rgb(24, 193, 106);
+    /* box-shadow: 0 0 10px rgb(35, 192, 254), 0 0 20px rgb(35, 192, 254), 0 0 40px rgb(35, 192, 254), 0 0 80px rgb(35, 192, 254),
+      0 0 160px rgb(35, 192, 254); */
+  }
+
+
+  /* responsive */
+
+  @media screen and ( max-width: 517px){
+
+    form label{
+        font-size: 1.5rem;
+    }
+  }
+
+  @media screen and ( max-width: 415px){
+
+    form label{
+        font-size: 1.1rem;
+    }
+
+    .btn2 a{
+        padding: 5px 9px;
+    }
+  }
+
+  @media screen and ( max-width: 335px){
+
+    form label{
+        font-size: .9rem;
+    }
+  }
+
+  @media screen and ( max-width: 295px){
+
+    form label{
+        font-size: .7rem;
+    }
+
+    .btn2 a{
+        padding: 3px 6px;
+    }
+  }
+
+
